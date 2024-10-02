@@ -14,7 +14,7 @@ void main() {
 	int inputNum;
 
 	printf("Enter operation number: ");
-	scanf_s("%1o", &inputNum);
+	scanf_s("%d", &inputNum);
 
 	switch (inputNum)
 	{
@@ -22,7 +22,7 @@ void main() {
 		add(); \
 			break;
 	case 2:
-		subtract();  // Call the subtract function when option 2 is selected
+		subtract(); 
 		break;
 	}
 
@@ -50,7 +50,7 @@ void add() {
 	printf("%lf + %lf = %lf\n", num1, num2, result);
 }
 
-void subtract() {  // Define the subtract function
+void subtract() {  
 	double num1, num2, result;
 	printf("Enter the first value: ");
 	scanf_s("%lf", &num1);
